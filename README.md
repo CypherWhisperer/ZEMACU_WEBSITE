@@ -109,7 +109,6 @@ yarn preview
 │   │       ├── base
 │   │       │   ├── form.js
 │   │       │   ├── script.js
-│   │       │   ├── script.js.former
 │   │       │   └── verses.js
 │   │       └── pages
 │   │           ├── contact.js
