@@ -1,0 +1,218 @@
+header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, #a117a4 0%, #7b0d7b 100%);
+  color: #fff;
+  z-index: 50;
+  /* Ensure header stays above content */
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Ensure it spans the full width */
+}
+
+/* Style for the logo area to match the image */
+header a {
+  display: flex;
+  align-items: center;
+}
+
+header a img {
+  max-height: 56px;
+  vertical-align: middle;
+  margin-right: 1rem;
+  /* Space between logo and nav items */
+  background: #fff;
+  /* White background to mimic the logo box */
+  padding: 0.25rem;
+  /* Slight padding for the logo */
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1450px;
+  /* Kept at 1450px to accommodate content */
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 60;
+  /* Ensure nav is above header */
+}
+
+
+#navMenu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  /* Reduced gap to save space */
+  align-items: center;
+}
+
+#navMenu li {
+  position: relative;
+}
+
+#navMenu li a {
+  color: #000875;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  /* Reduced padding */
+  border-radius: 6px;
+  /* Slightly reduced border radius */
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* Reduced font size */
+  background-color: #fff;
+  /* Default background for better contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  /* Reduced from 120px */
+  text-align: center;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+#navMenu li a:hover {
+  background-color: #e0e0e0;
+  /* Light gray background on hover */
+  color: #a117a4;
+  /* Dark purple text on hover */
+  transform: translateY(-2px);
+  /* Slight lift effect */
+}
+
+#navMenu li a:active {
+  background-color: #d0d0d0;
+  /* Slightly darker gray on click */
+  color: #7b0d7b;
+  /* Deeper purple on click */
+  transform: translateY(1px);
+  /* Slight press effect */
+}
+
+/* Dropdown Styles */
+#navMenu .dropdown {
+  position: relative;
+}
+
+#navMenu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 0;
+}
+
+#navMenu .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navMenu .dropdown-content a {
+  color: #000875;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  min-width: 0;
+  background-color: transparent;
+}
+
+#navMenu .dropdown-content a:hover {
+  background-color: #e0e0e0;
+  color: #a117a4;
+}
+
+@media(max-width: 768px) {
+
+  nav {
+    padding: 0 1rem;
+    /* Reduced padding on smaller screens */
+    max-width: 100%;
+    /* Full width on mobile */
+  }
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    background: #a117a4;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+    z-index: 10000;
+    text-align: center;
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+  }
+
+  #navMenu.show {
+    display: flex;
+  }
+
+  #navMenu li a {
+    padding: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Subtle background for mobile */
+    min-width: 0;
+    /* Reset min-width for mobile */
+  }
+
+  #navMenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Lighter background on hover for mobile */
+    color: #fff;
+    /* White text on hover */
+    transform: translateY(-2px);
+    /* Lift effect */
+  }
+
+  #navMenu li a:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Even lighter on click for mobile */
+    color: #fff;
+    /* White text on click */
+    transform: translateY(1px);
+    /* Press effect */
+  }
+
+  #navMenu .dropdown-content {
+    position: static;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  #navMenu .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header a img {
+    max-height: 40px;
+    /* Reduced logo size on mobile */
+    margin-right: 0.5rem;
+    /* Adjusted spacing on mobile */
+  }
+}

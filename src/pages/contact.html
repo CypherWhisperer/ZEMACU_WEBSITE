@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Christian Union</title>
+  <link rel="stylesheet" href="../assets/css/base/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="../components/initComponents.js"></script>
+</head>
+
+<body class="bg-white" data-page="contact">
+
+  <canvas id="bgCanvas" class="absolute inset-0 z-0"></canvas>
+  <div id="overlay" class="hidden"></div>
+
+  <header id="contactHeader" class="z-50">
+    <div id="header-nav"></div>
+  </header>
+
+  <main id="contactMainContainer" class="container mx-auto p-4 text-center z-20 relative">
+    <!-- Increased z-index to 20 -->
+
+    <h1 class="text-4xl font-playfair text-[#a117a4] mb-4 animate-fadeIn">Contact Us</h1>
+    <p class="text-lg font-inter text-gray-800 mb-6">Reach out to us with your questions or feedback.</p>
+
+    <!-- Jotform Embed Code -->
+    <div class="jotform-embed" id="JotFormIFrame-251612682564055">
+      <iframe id="JotFormIFrame-251612682564055" title="Christian Union Contact" onload="window.parent.scrollTo(0,0)"
+        allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera"
+        src="https://form.jotform.com/251612682564055" frameborder="0"
+        style="min-width: 100%; max-width: 100%; height: 698px; border: none; z-index: 10;" scrolling="no">
+      </iframe>
+    </div>
+
+    <p class="text-lg font-inter text-gray-800 mt-8">If the form doesn't load, please
+      <a href="https://form.jotform.com/251612682564055" class="text-[#990bbf] underline">click here</a>
+      to contact us directly.
+    </p> <!-- Increased margin-top to 8 -->
+
+    <div class="mt-8">
+      <h2 class="text-2xl font-inter text-[#333] mb-2">Contact Details</h2>
+      <p class="text-lg font-inter text-gray-800">Email: [email protected]</p>
+      <p class="text-lg font-inter text-gray-800">Phone: +1-555-123-4567</p>
+      <p class="text-lg font-inter text-gray-800">Address: 123 Faith Street, Hope City, HC 12345</p>
+    </div>
+
+  </main>
+
+  <div id="footer-content"></div>
+  <script src="../assets/js/base/script.js"></script>
+</body>
+
+</html>

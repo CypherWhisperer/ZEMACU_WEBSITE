@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Christian Union</title>
+  <link rel="stylesheet" href="../assets/css/base/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages/registration.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="../components/initComponents.js"></script>
+</head>
+
+<body class="bg-white" data-page="registration">
+
+  <canvas id="bgCanvas" class="absolute inset-0 z-0"></canvas>
+  <div id="overlay" class="hidden"></div>
+
+  <header id="registrationHeader" class="z-50">
+    <div id="header-nav"></div>
+  </header>
+
+  <main id="registrationMainContainer" class="container mx-auto p-4 text-center">
+
+    <h1 class="text-4xl font-playfair text-[#a117a4] mb-4 animate-fadeIn">Register with Us</h1>
+    <p class="text-lg font-inter text-gray-800 mb-6">Join our community by filling out the form below.</p>
+    <!-- Jotform Embed Code -->
+    <div class="jotform-embed" id="JotFormIFrame-251605441090044">
+      <iframe id="JotFormIFrame-251605441090044" title="Christian Union Registration"
+        onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true"
+        allow="geolocation; microphone; camera" src="https://form.jotform.com/251605441090044" frameborder="0"
+        style="min-width: 100%; max-width: 100%; height: 539px; border: none;" scrolling="no">
+      </iframe>
+    </div>
+
+    <p class="text-lg font-inter text-gray-800 mt-4">If the form doesn't load, please
+      <a href="https://form.jotform.com/251605441090044" class="text-[#990bbf] underline">click here</a>
+      to register directly.
+    </p>
+  </main>
+
+  <div id="footer-content"></div>
+  <script src="../assets/js/base/script.js"></script>
+</body>
+
+</html>

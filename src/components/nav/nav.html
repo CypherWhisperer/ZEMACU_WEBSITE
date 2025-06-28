@@ -1,0 +1,34 @@
+<!-- components/nav/nav.html -->
+
+<nav class="container mx-auto p-4 flex justify-between items-center">
+  Oo
+  <a href="index.html" class="flex items-center text-2xl font-bold font-playfair">
+    <img src="https://i.ibb.co/z9THbdj/123.png" alt="Christian Union Logo" class="h-12 w-auto inline-block"
+      onerror="this.style.display='none'; this.parentElement.innerText='Christian Union'">
+  </a>
+
+  <div class="md:hidden" style="display: hidden;">
+    <button id="menuToggle" class="text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <ul id="navMenu" class="hidden md:flex space-x-4 font-inter">
+    <li><a href="index.html" class="hover:text-[#00008b] transition-colors">Home</a></li>
+    <li><a href="weekly.html" class="hover:text-[#00008b] transition-colors">Weekly Program</a></li>
+    <li><a href="gallery-blog.html" class="hover:text-[#00008b] transition-colors">Gallery/Blog</a></li>
+    <li><a href="leaders.html" class="hover:text-[#00008b] transition-colors">Leaders</a></li>
+    <li><a href="registration.html" class="hover:text-[#00008b] transition-colors">Registration</a></li>
+    <li><a href="contact.html" class="hover:text-[#00008b] transition-colors">Contact Us</a></li>
+    <li class="dropdown">
+      <a href="#" class="hover:text-[#00008b] transition-colors">Pages</a>
+      <div class="dropdown-content">
+        <a href="testimonies.html">Testimonies</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="prayer-requests.html">Prayer Requests</a>
+      </div>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,30 @@
+/* New Animations for Prayer Requests Page - Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+body[data-page="prayer-requests"] #bgCanvas {
+  background: linear-gradient(135deg, #990bbf, #1c2526);
+}
+
+body[data-page="prayer-requests"] #bgCanvas .pulse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: pulse 3s infinite ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

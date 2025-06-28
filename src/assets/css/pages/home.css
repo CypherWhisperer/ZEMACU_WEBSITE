@@ -1,0 +1,133 @@
+/* The Home Page CSS FILE ... */
+
+.slideshow-container {
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+  border: 0px solid rgb(139, 12, 118);
+  min-height: 50vh;
+}
+
+.slideshow-container .slide {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: transform 1.5s ease-in-out;
+  opacity: 1;
+}
+
+.slideshow-container .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.slideshow-container .slide iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* ---------------------------- Verse Content ------------------------------------ */
+
+#indexMainVerseDisplay {
+  min-height: 120px;
+  margin-bottom: 2rem;
+  color: #990bbf;
+  font-size: 1.25rem;
+  font-style: italic;
+  animation: verseFade 15s infinite;
+}
+
+@keyframes verseFade {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* -------------------------- Testimonial Section ------------------------------- */
+
+.testimonials-section {
+  padding: 2rem 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.testimonials-section .testimonials-container {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 150px;
+}
+
+.testimonials-section .testimonials-container .testimonial-item {
+  min-height: 120px;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  display: none;
+  animation: verseFade 15s infinite;
+}
+
+.testimonials-section .testimonials-container .testimonial-item.active {
+  display: block;
+}
+
+.testimonials-section .testimonials-container .testimonial-item .testimonial-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.testimonials-section .testimonials-container .testimonial-item .testimonial-text {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .testimonials-container {
+    min-height: 120px;
+  }
+
+  .testimonial-item {
+    font-size: 0.9rem;
+  }
+
+  .slideshow-container {
+    min-height: 30vh;
+  }
+
+  .slide {
+    height: 30vh;
+  }
+}

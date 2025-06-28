@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery & Blog - Christian Union</title>
+  <link rel="stylesheet" href="../assets/css/base/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages/gallery-blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="../components/initComponents.js"></script>
+</head>
+
+<body class="bg-white" data-page="gallery">
+
+  <canvas id="bgCanvas" class="absolute inset-0 z-0"></canvas>
+  <div id="overlay" class="hidden"></div>
+
+  <header class="z-50">
+    <div id="header-nav"></div>
+  </header>
+
+  <main class="container mx-auto p-4 text-center" style="margin-top: 2rem;">
+
+    <h1 class="text-4xl font-playfair text-[#a117a4] mb-4 animate-fadeIn">Gallery & Blog</h1>
+
+    <div id="galleryMainGrid1" class="gallery-grid">
+      <!-- Row 1 -->
+      <div class="gallery-item-container">
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/ks3FYzL0/IMG-20250407-WA0023.jpg" alt="Gallery Image 1"
+            onclick="openModal(this.src, 'image')">
+        </div>
+        <p class="gallery-caption">Community Gathering - A joyful worship session from last Sunday.</p>
+      </div>
+
+      <div class="gallery-item-container">
+        <div class="gallery-item"><img src="https://i.ibb.co/9mx7ncbC/IMG-20250407-WA0025.jpg" alt="Gallery Image 2"
+            onclick="openModal(this.src, 'image')"></div>
+        <p class="gallery-caption">Faith Event - A moment of unity during our latest gathering.</p>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="gallery-item-container">
+        <div class="gallery-item">
+          <iframe src="https://drive.google.com/file/d/1kCxQfVdpmVipIzy5V6afBafZqsFfWLF1/preview" frameborder="0"
+            allowfullscreen onclick="openModal(this.src, 'video')">
+          </iframe>
+        </div>
+        <p class="gallery-caption">Video Highlight - Highlights from our recent outreach program.</p>
+      </div>
+
+      <div class="gallery-item-container">
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/m5C10vxn/IMG-20250407-WA0039.jpg" alt="Gallery Image 3"
+            onclick="openModal(this.src, 'image')">
+        </div>
+        <p class="gallery-caption">Bible Study - An inspiring session with our members.</p>
+      </div>
+
+      <div class="gallery-item-container">
+        <div class="gallery-item">
+          <iframe src="https://drive.google.com/file/d/1kCxQfVdpmVipIzy5V6afBafZqsFfWLF1/preview" frameborder="0"
+            allowfullscreen onclick="openModal(this.src, 'video')">
+          </iframe>
+        </div>
+        <p class="gallery-caption">Video Highlight - Recap of our worship practice.</p>
+      </div>
+
+    </div>
+
+    <div id="galleryMainBlog" class="blog-section">
+      <div class="blog-post">
+        <h2 class="text-2xl font-inter text-[#333] mb-2">Community Gathering</h2>
+        <p class="text-lg font-inter text-gray-800">We had an amazing time last Sunday with our community gathering,
+          filled with worship and fellowship. Join us next time!</p>
+      </div>
+      <div class="blog-post">
+        <h2 class="text-2xl font-inter text-[#333] mb-2">Faith Event</h2>
+        <p class="text-lg font-inter text-gray-800">Our latest faith event brought inspiring messages and strengthened
+          our bond. Check out the photos!</p>
+      </div>
+    </div>
+
+  </main>
+
+
+  <div id="footer-content"></div>
+  <div id="galleryModal" class="modal">
+    <div class="modal-content" id="galleryModalContent"></div>
+    <span class="close" onclick="closeModal()">×</span>
+  </div>
+
+  <script src="../assets/js/base/script.js"></script>
+</body>
+
+</html>

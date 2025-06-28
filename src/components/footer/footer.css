@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #00008b 0%, #1c2526 100%);
+  color: #00014e;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+footer ul li a {
+  color: #02008b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media(max-width: 768px) {
+  footer {
+    padding: 1rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

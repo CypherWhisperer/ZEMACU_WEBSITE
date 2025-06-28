@@ -1,0 +1,32 @@
+{
+  "name": "zemacu_website_02",
+  "version": "1.0.0",
+  "description": "ZEMACU WEBSITE PROJECT",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build":"vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CypherWhisperer/ZEMACU_WEBSITE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CypherWhisperer/ZEMACU_WEBSITE/issues"
+  },
+  "homepage": "https://github.com/CypherWhisperer/ZEMACU_WEBSITE#readme",
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
