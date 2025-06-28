@@ -46,7 +46,7 @@ or
 yarn dev
 ```
 
-The site will be available at `http://localhost:5173`
+The site will be available at `http://localhost:3000`
 
 ### Production Build
 
