@@ -60,26 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Slideshow functionality
-  const slides = document.querySelectorAll('.slide');
-  if (slides.length > 0) {
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${(i - index) * 100}%)`;
-        slide.style.zIndex = i === index ? 1 : 0;
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 5000);
-    showSlide(currentSlide);
-  }
 
   // Testimonials Cycle
   const testimonialItems = document.querySelectorAll('.testimonial-item');

@@ -1,3 +1,4 @@
+
 # ZEMACU WEBSITE
 
 ### A Modern Website For the Zetech University Mang'u Campus Christian Union, Developed By the Media Department
@@ -13,8 +14,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
     
    ```bash
-    git clone https://github.com/CypherWhisperer/ZEMACU_WEBSITE.git zemacu_website
-    cd zemacu_website
+    git clone https://github.com/CypherWhisperer/ZEMACU_WEBSITE.git zemacu_website && cd zemacu_website
     ```
     
 2. **Install dependencies**
@@ -82,9 +82,9 @@ yarn preview
 .
 ├── config
 ├── docs
-│   ├── CONTRIBUTING.md
-│   ├── DEPLOYMENT.md
-│   └── STYLE_GUIDE.md
+│   ├── CONTRIBUTING.md              # Constribution stuff
+│   ├── DEPLOYMENT.md                # Deployment Documentations
+│   └── STYLE_GUIDE.md               # Guide in Development Conventions
 ├── package.json
 ├── package-lock.json
 ├── README.md
@@ -92,8 +92,8 @@ yarn preview
 │   ├── assets
 │   │   ├── css
 │   │   │   ├── base
-│   │   │   │   └── styles.css
-│   │   │   └── pages
+│   │   │   │   └── styles.css           # Main App CSS for general styling
+│   │   │   └── pages                    # Page specific styling goes here
 │   │   │       ├── contact.css
 │   │   │       ├── gallery-blog.css
 │   │   │       ├── home.css
@@ -105,12 +105,13 @@ yarn preview
 │   │   │       └── weekly.css
 │   │   ├── fonts
 │   │   ├── images
+|   |   ├── videos
 │   │   └── js
-│   │       ├── base
+│   │       ├── base                   # base JS - JS logic shared across pages
 │   │       │   ├── form.js
 │   │       │   ├── script.js
 │   │       │   └── verses.js
-│   │       └── pages
+│   │       └── pages                  # Page specific JS logic
 │   │           ├── contact.js
 │   │           ├── gallery-blog.js
 │   │           ├── home.js
@@ -120,19 +121,19 @@ yarn preview
 │   │           ├── registration.js
 │   │           ├── testimonies.js
 │   │           └── weekly.js
-│   ├── components
-│   │   ├── ComponentLoader.js
+│   ├── components                    # for components shared across pages
+│   │   ├── ComponentLoader.js        # a class for loading the components
 │   │   ├── footer
-│   │   │   ├── footer.css
-│   │   │   ├── footer.html
-│   │   │   └── footer.js
-│   │   ├── initComponents.js
+│   │   │   ├── footer.css        
+│   │   │   ├── footer.html       
+│   │   │   └── footer.js         
+│   │   ├── initComponents.js         # ochestrates the ComponentLoader
 │   │   └── nav
-│   │       ├── nav.css
-│   │       ├── nav.html
-│   │       └── nav.js
+│   │       ├── nav.css            # naming convention is key
+│   │       ├── nav.html           # the JS and CSS files are auto-detected 
+│   │       └── nav.js             # by the initializing - script initComponents
 │   ├── data
-│   └── pages
+│   └── pages                      # The HTML pages go here
 │       ├── contact.html
 │       ├── gallery-blog.html
 │       ├── index.html

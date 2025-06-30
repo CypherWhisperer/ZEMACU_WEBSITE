@@ -130,4 +130,35 @@
   .slide {
     height: 30vh;
   }
+
+  /*  Drop Down Styling for Mobile*/
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
 }
