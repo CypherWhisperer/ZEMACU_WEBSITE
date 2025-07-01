@@ -74,7 +74,7 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true, // Allow external connections
-    open: '/pages/index.html', // Opens your main page
+    open: '/pages/home.html', // Opens your main page
 
     // CORS configuration for component loading
     cors: true,

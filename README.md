@@ -7,6 +7,18 @@
 Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 16.0 or higher)
+
+# ZEMACU WEBSITE
+
+---
+### A Modern Website For the Zetech University Mang'u Campus Christian Union, Developed By the Media Department
+
+---
+## 🔧 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 16.0 or higher)
 - npm (comes with Node.js) or [Yarn](https://yarnpkg.com/)
 
 ## 📦 Installation
@@ -92,59 +104,51 @@ yarn preview
 │   ├── assets
 │   │   ├── css
 │   │   │   ├── base
-│   │   │   │   └── styles.css           # Main App CSS for general styling
-│   │   │   └── pages                    # Page specific styling goes here
-│   │   │       ├── contact.css
-│   │   │       ├── gallery-blog.css
+│   │   │   │   └── styles.css
+│   │   │   └── pages
 │   │   │       ├── home.css
+│   │   │       ├── index.css
 │   │   │       ├── leaders.css
-│   │   │       ├── offerings.css
-│   │   │       ├── prayer-requests.css
-│   │   │       ├── registration.css
-│   │   │       ├── testimonies.css
+│   │   │       ├── resources.css
+│   │   │       ├── support.css
 │   │   │       └── weekly.css
 │   │   ├── fonts
 │   │   ├── images
-|   |   ├── videos
-│   │   └── js
-│   │       ├── base                   # base JS - JS logic shared across pages
-│   │       │   ├── form.js
-│   │       │   ├── script.js
-│   │       │   └── verses.js
+│   │   ├── js
+│   │   |   ├── base                   # base JS - JS logic shared across pages
+│   │   │   │   ├── form.js
+│   │   │   │   ├── script.js
+│   │   │   │   └── verses.js
 │   │       └── pages                  # Page specific JS logic
-│   │           ├── contact.js
-│   │           ├── gallery-blog.js
-│   │           ├── home.js
-│   │           ├── leaders.js
-│   │           ├── offerings.js
-│   │           ├── prayer-requests.js
-│   │           ├── registration.js
-│   │           ├── testimonies.js
-│   │           └── weekly.js
+│   │   │       ├── home.js
+│   │   │       ├── index.js
+│   │   │       ├── leaders.js
+│   │   │       ├── resources.js
+│   │   │       ├── support.js
+│   │   │       └── weekly.js
+│   │   └── videos
 │   ├── components                    # for components shared across pages
 │   │   ├── ComponentLoader.js        # a class for loading the components
 │   │   ├── footer
-│   │   │   ├── footer.css        
-│   │   │   ├── footer.html       
-│   │   │   └── footer.js         
+│   │   │   ├── footer.css
+│   │   │   ├── footer.html
+│   │   │   └── footer.js
 │   │   ├── initComponents.js         # ochestrates the ComponentLoader
 │   │   └── nav
-│   │       ├── nav.css            # naming convention is key
-│   │       ├── nav.html           # the JS and CSS files are auto-detected 
-│   │       └── nav.js             # by the initializing - script initComponents
+│   │       ├── nav.css               # naming convention is key 
+│   │       ├── nav.html              # the JS and CSS files are auto-detected 
+│   │       └── nav.js                # by the initializing - script initComponents
 │   ├── data
-│   └── pages                      # The HTML pages go here
-│       ├── contact.html
-│       ├── gallery-blog.html
+│   └── pages                         # The HTML pages go here
+│       ├── home.html
 │       ├── index.html
 │       ├── leaders.html
-│       ├── offerings.html
-│       ├── prayer-requests.html
-│       ├── registration.html
-│       ├── testimonies.html
+│       ├── resources.html
+│       ├── support.html
 │       └── weekly.html
 ├── tests
 └── vite.config.js
+
 ```
 
 ## 🛠️ Available Scripts
