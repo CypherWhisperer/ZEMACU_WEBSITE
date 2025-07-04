@@ -1,8 +1,12 @@
 <!-- components/nav/nav.html -->
-<nav>
+<nav style="
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ">
 
   <a href="index.html" class="flex items-center text-2xl font-bold font-playfair">
-    <img src="https://i.ibb.co/z9THbdj/123.png" alt="Christian Union Logo" class="h-12 w-auto inline-block"
+    <img src="../../assets/images/general/logo.svg" alt="Christian Union Logo" class="h-12 w-auto inline-block"
       onerror="this.style.display='none'; this.parentElement.innerText='Christian Union'">
   </a>
 
@@ -29,7 +33,7 @@
 
     <li><a href="support.html" class="nav-link">Support Us</a></li>
     <li>
-      <button class="modal-trigger" data-target="registerModal">Register</button>
+      <button class="register modal-trigger" data-target="registerModal">Register</button>
     </li>
   </ul>
 

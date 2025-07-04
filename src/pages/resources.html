@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery & Blog - Christian Union</title>
   <link rel="stylesheet" href="../assets/css/base/styles.css">
-  <link rel="stylesheet" href="../assets/css/pages/resources.css.css">
+  <link rel="stylesheet" href="../assets/css/pages/resources.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap"
     rel="stylesheet">
 
@@ -26,7 +26,7 @@
 
     <h1 class="text-4xl font-playfair text-[#a117a4] mb-4 animate-fadeIn">Gallery & Blog</h1>
 
-    <div id="galleryMainGrid1" class="gallery-grid">
+    <div id="galleryGrid" class="gallery-grid">
       <!-- Row 1 -->
       <div class="gallery-item-container">
         <div class="gallery-item">
@@ -71,60 +71,28 @@
 
     </div>
 
-    <div id="galleryMainBlog" class="blog-section">
-      <div class="blog-post">
-        <h2 class="text-2xl font-inter text-[#333] mb-2">Community Gathering</h2>
-        <p class="text-lg font-inter text-gray-800">We had an amazing time last Sunday with our community gathering,
-          filled with worship and fellowship. Join us next time!</p>
-      </div>
-      <div class="blog-post">
-        <h2 class="text-2xl font-inter text-[#333] mb-2">Faith Event</h2>
-        <p class="text-lg font-inter text-gray-800">Our latest faith event brought inspiring messages and strengthened
-          our bond. Check out the photos!</p>
-      </div>
+
+    <div class="mt-8">
+      <a href="https://drive.google.com/file/d/1qsxHSHMEaGxmcgUGJqzJLMp_WK4Gcg6F/view?usp=drive_link" target="_blank"
+        class="inline-block bg-[#a117a4] text-white font-inter text-lg px-6 py-3 rounded-lg hover:bg-[#990bbf] transition-colors">Download
+        Our Weekly program (PDF)</a><br><br>
     </div>
 
-
-    <div id="ContactLinks"
-      class="cu-footer container mx-auto py-8 text-center bg-[#f9f5fc] rounded-t-2xl shadow-inner animate-fade-up">
-      <p class="text-lg font-semibold text-[#990bbf] mb-4">
-        🙏 Submit your
-        <span class="text-[#a117a4]">Prayer Request</span>,
-        <span class="text-[#a117a4]">Testimony</span>, or
-        <span class="text-[#a117a4]">Offering</span>
-      </p>
-      <ul class="cu-footer-links flex flex-wrap justify-center gap-4">
-        <li>
-          <a href="testimonies.html"
-            class="cu-footer-btn bg-[#990bbf] text-white px-5 py-2 rounded-full hover:bg-[#00008b] hover:scale-105 transition-all duration-300 ease-out">
-            ✍️ Testimonies
-          </a>
-        </li>
-        <li>
-          <a href="offerings.html"
-            class="cu-footer-btn bg-[#990bbf] text-white px-5 py-2 rounded-full hover:bg-[#00008b] hover:scale-105 transition-all duration-300 ease-out">
-            💝 Offerings
-          </a>
-        </li>
-        <li>
-          <a href="prayer-requests.html"
-            class="cu-footer-btn bg-[#990bbf] text-white px-5 py-2 rounded-full hover:bg-[#00008b] hover:scale-105 transition-all duration-300 ease-out">
-            🙌 Prayer Requests
-          </a>
-        </li>
-      </ul>
+    <div class="mt-8">
+      <a href="https://drive.google.com/file/d/1qsxHSHMEaGxmcgUGJqzJLMp_WK4Gcg6F/view?usp=drive_link" target="_blank"
+        class="inline-block bg-[#a117a4] text-white font-inter text-lg px-6 py-3 rounded-lg hover:bg-[#990bbf] transition-colors">Download
+        our Christian Union Constitution (PDF)</a>
     </div>
+
 
   </main>
 
-
   <div id="footer-content"></div>
-  <div id="galleryModal" class="modal">
-    <div class="modal-content" id="galleryModalContent"></div>
-    <span class="close" onclick="closeModal()">×</span>
-  </div>
-
   <script src="../assets/js/base/script.js"></script>
+
+  <!-- Importing scripts for Iconic Ions-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

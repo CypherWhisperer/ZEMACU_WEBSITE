@@ -61,31 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // Testimonials Cycle
-  const testimonialItems = document.querySelectorAll('.testimonial-item');
-  if (testimonialItems.length > 0) {
-    let currentTestimonial = 0;
-
-    function showTestimonial(index) {
-      testimonialItems.forEach((item, i) => {
-        item.classList.remove('active');
-        item.style.opacity = '0';
-      });
-      if (testimonialItems[index]) {
-        testimonialItems[index].classList.add('active');
-        testimonialItems[index].style.opacity = '1';
-      }
-    }
-
-    function nextTestimonial() {
-      currentTestimonial = (currentTestimonial + 1) % testimonialItems.length;
-      showTestimonial(currentTestimonial);
-    }
-
-    setInterval(nextTestimonial, 15000);
-    showTestimonial(currentTestimonial);
-  }
-
   // Canvas Animation Setup
   const canvas = document.getElementById('bgCanvas');
   if (canvas) {
