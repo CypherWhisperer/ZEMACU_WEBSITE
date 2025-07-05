@@ -18,13 +18,10 @@ export default defineConfig({
       input: {
         // Main pages
         main: resolve(__dirname, 'src/pages/index.html'),
-        contact: resolve(__dirname, 'src/pages/contact.html'),
-        'gallery-blog': resolve(__dirname, 'src/pages/gallery-blog.html'),
+        home: resolve(__dirname, 'src/pages/home.html'),
+        resources: resolve(__dirname, 'src/pages/resources.html'),
         leaders: resolve(__dirname, 'src/pages/leaders.html'),
-        offerings: resolve(__dirname, 'src/pages/offerings.html'),
-        'prayer-requests': resolve(__dirname, 'src/pages/prayer-requests.html'),
-        registration: resolve(__dirname, 'src/pages/registration.html'),
-        testimonies: resolve(__dirname, 'src/pages/testimonies.html'),
+        support: resolve(__dirname, 'src/pages/support.html'),
         weekly: resolve(__dirname, 'src/pages/weekly.html')
       },
 
