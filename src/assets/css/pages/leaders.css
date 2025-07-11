@@ -36,7 +36,8 @@ a {
     height: 100%;
     /* Avoiding some disorientation in the image */
     object-fit: cover;
-    filter: blur(10px);
+    filter: none;
+    /* After pre-blurring the images*/
 }
 
 /* ============= IMAGE CONTAINER =================== */
@@ -302,9 +303,14 @@ a {
     top: 0;
 }
 
+
+/*.carousel .time.running {
+    animation: runningTime 8s linear forwards;
+}*/
+
 .carousel.next .time,
 .carousel.prev .time {
-    animation: runningTime 3s linear 1 forwards;
+    animation: runningTime 8s linear 1 forwards;
 }
 
 @keyframes runningTime {

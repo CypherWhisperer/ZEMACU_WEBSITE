@@ -111,7 +111,7 @@ export default defineConfig({
       '@pages': resolve(__dirname, 'src/pages'),
       '@js': resolve(__dirname, 'src/assets/js'),
       '@css': resolve(__dirname, 'src/assets/css'),
-      '@images': resolve(__dirname, 'src/assets/images')
+      '@images': resolve(__dirname, 'public/images')
     }
   },
 
